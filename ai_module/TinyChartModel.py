@@ -22,7 +22,7 @@ class TinyChartModel(AiInterface):
         )
         return tokenizer, model, processor, context_len
 
-    def model_inference(self, datapath: str, chart_obj: dict, prompt: str = "Create a brief summarization or extract key insights based on the chart image."):
+    def model_inference(self, datapath: str, chart_obj: dict, prompt: str = "CCreate a brief summarization or extract key insights based on the chart image."):
         """
         Interference ai model
         """

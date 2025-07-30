@@ -34,8 +34,8 @@ def main():
             execution_errors.append(error)
             print(error)
         print("====================Done "+chart_obj["id"]+" ===========================")
-    FileUtils.create_output_file("output_unichart.json", result_objs)
-    FileUtils.create_output_file("error_unichart.txt", execution_errors)
+    FileUtils.create_output_file(f"result_{model_name}.json", result_objs)
+    FileUtils.create_output_file(f"error_{model_name}.txt", execution_errors)
     print("====================Completed===========================")
 
 if __name__ == "__main__":

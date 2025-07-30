@@ -18,7 +18,7 @@ class TinyChartModel(AiInterface):
             ai_name,  
             model_base=None, 
             model_name=get_model_name_from_path(ai_name), 
-            device="cpu" # device="cpu" if running on cpu 
+            device="cuda" # device="cpu" if running on cpu 
         )
         return tokenizer, model, processor, context_len
 
